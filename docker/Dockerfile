@@ -5,7 +5,7 @@ LABEL description="Actual Flow - Import bank transactions to Actual Budget via L
 LABEL org.opencontainers.image.source="https://github.com/lunchflow/actual-flow"
 
 # Install dependencies
-RUN apk add --no-cache bash curl tini
+RUN apk add --no-cache bash curl tini python3 g++ make
 
 # Create app directory
 WORKDIR /app
